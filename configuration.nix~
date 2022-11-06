@@ -19,5 +19,4 @@
 			options = "-d";
 		};
 	};
-	services.nix-daemon.enable = true;
 }
