@@ -1,5 +1,9 @@
 { config, pkgs, inputs, ... }:
 {
+	imports = [
+		./packages/osx
+	];
+	
 	# Enable the usage of proprietary/unfree packages repository.
 	nixpkgs.config.allowUnfree = true;
 	
