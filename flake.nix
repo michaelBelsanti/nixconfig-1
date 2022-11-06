@@ -22,14 +22,12 @@
     		user = "cullvox";
   	in
   	{
-		darwinConfigurations = {
-			osx = darwin.lib.darwinSystem {
-				import ./osx {
-					inherit (nixpkgs) lib;
-					inherit inputs nixpkgs home-manager darwin user;
-				};
-			};
-		};
+		darwinConfigurations = (
+			import ./packages/osx {
+				inherit (nixpkgs)lib;
+				inherit nixpkgs darwin;
+			}
+		);
 	};
 }
 

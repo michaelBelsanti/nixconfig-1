@@ -1,10 +1,10 @@
 # Contains the packages used in my common CLI environment
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
 		# Information Gathering
-		nitch
+		# nitch
 		
 		# Text Editors
 		helix
@@ -12,5 +12,5 @@
 
 		# Source Controle 
 		git
-	]
+	];
 }
